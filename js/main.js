@@ -4,10 +4,16 @@
 /// Start functions on DocumentReady ///////// 
 $(document).ready(function() { 
  	 $('body').hide().fadeIn(500);
+ 	 sizeContent();
 });
 
 
-/// scroll to lement Navi /////////
+$(window).resize(function(){
+	sizeContent();
+});
+
+
+/// scroll to Element Navi /////////
 function scrollToElement(id){
 	$('html, body').animate({
 		scrollTop: $(id).offset().top -80
@@ -15,12 +21,20 @@ function scrollToElement(id){
 }
 
 
+/// Height Viewportsize ///////// 
+function sizeContent() {
+	viewportHeight = $(window).height();
+	$("#introContainer, #me").css("min-height", viewportHeight); 
+}
+
+
+
 //////// Start functions on scroll ///////// 
 
 $(window).scroll(function(){
-	scroll();
 	headerchange();
 	menuScrollClose();
+	logoSetBack();
 });
 
 ////////////// headerchange //////////////// 
@@ -38,6 +52,34 @@ function headerchange() {
 }
 
 
+////////////// inview Test ////////////////
+
+
+$('.content').bind('inview', function(event, visible) {
+      if (visible) {
+      	console.log('visible');
+      	
+      	color 	= $(this).data('color');
+		bgColor	= $(this).data('bgcolor');
+		text1 	= $(this).data('text1');
+		text2 	= $(this).data('text2');
+      
+        $('#logo1').text(text1);
+		$('#logo2').text(text2);
+      }
+});
+
+function logoSetBack(){
+ if($(window).scrollTop() < 10){
+	 $('#logo1').text('Heyfive.');
+	 $('#logo2').text('me');
+ }
+}
+
+
+
+/*
+
 ////////////// colorchange ////////////////
 var title 		= null;
 var color 		= null;
@@ -51,7 +93,7 @@ var current_image_index =  1;
 document.addEventListener("touchmove", ScrollStart, false);
 
 function ScrollStart() {
-		scroll();
+		//scroll();
 		headerchange();
 		menuScrollClose();
 }
@@ -145,7 +187,7 @@ function textchanger(image_index) {
     $('#logo2').text(text2);
 
 }
-
+*/
 
 //////// toggle the menu ///////// 
 function menuToggle(){
