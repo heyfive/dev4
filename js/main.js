@@ -57,18 +57,18 @@ function ScrollStart() {
 }
 
 function scroll(){
-	var image_height 	= $(".section").height();
-	var buffer_space 	= $(window).height()/2;
-	var projects_offset = $(window).scrollTop() - $(".section").offset().top + buffer_space;
+	var image_height 	= $(".content").height();
+	var buffer_space 	= $(window).height()/4;
+	var projects_offset = $(window).scrollTop() - $(".content").offset().top + buffer_space;
 	var image_index 	= Math.ceil(projects_offset / image_height);
-	var parent_project 	= $(".section" + image_index);
+	var parent_project 	= $(".content" + image_index);
 
-	var parent_project_id = $(".section").attr('id');
+	var parent_project_id = $(".content").attr('id');
 		
 	if (image_index != current_image_index) {
 			current_image_index = image_index;
 			textchanger(image_index);
-			console.log('jetzt' + image_height);
+			console.log('parent_project: ' + parent_project);
 		}
 }
 
@@ -76,49 +76,49 @@ function textchanger(image_index) {
 	
 	switch(image_index){
 		
-		case 0:
-			color 	= $("#intro").data('color');
-			bgColor	= $("#intro").data('bgcolor');
-			text1 	= $("#intro").data('text1');
-			text2 	= $("#intro").data('text2');
+		case 1:
+			color 	= $("#introContainer").data('color');
+			bgColor	= $("#introContainer").data('bgcolor');
+			text1 	= $("#introContainer").data('text1');
+			text2 	= $("#introContainer").data('text2');
 		break;
 		
-		case 1:
+		case 2:
 			color 	= $("#five").data('color');
 			bgColor	= $("#five").data('bgcolor');
 			text1 	= $("#five").data('text1');
 			text2 	= $("#five").data('text2');
 		break;
 		
-		case 2:
+		case 3:
 			color 	= $("#four").data('color');
 			bgColor	= $("#four").data('bgcolor');
 			text1 	= $("#four").data('text1');
 			text2 	= $("#four").data('text2');
 		break;
 		
-		case 3:
+		case 4:
 			color 	= $("#three").data('color');
 			bgColor	= $("#three").data('bgcolor');
 			text1 	= $("#three").data('text1');
 			text2 	= $("#three").data('text2');
 		break;
 		
-		case 4:
+		case 5:
 			color 	= $("#two").data('color');
 			bgColor	= $("#two").data('bgcolor');
 			text1 	= $("#two").data('text1');
 			text2 	= $("#two").data('text2');
 		break;
 		
-		case 5:
+		case 6:
 			color 	= $("#one").data('color');
 			bgColor	= $("#one").data('bgcolor');
 			text1 	= $("#one").data('text1');
 			text2 	= $("#one").data('text2');
 		break;
 		
-		case 6:
+		case 7:
 			color 	= $("#me").data('color');
 			bgColor	= $("#me").data('bgcolor');
 			text1 	= $("#me").data('text1');
@@ -127,8 +127,8 @@ function textchanger(image_index) {
 		
 		
 		default:
-			color 	= $("#intro").data('color');
-			bgColor	= $("#intro").data('bgcolor');
+			color 	= $("#introContainer").data('color');
+			bgColor	= $("#introContainer").data('bgcolor');
 			text1 	= 'Heyfive.';
 			text2 	= 'me';
 			console.log('default');
