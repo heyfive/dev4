@@ -1,0 +1,421 @@
+
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+/*///////////////////////*/
+
+@font-face {
+	font-family: maisonBold;
+	src: url('../fonts/MaisonNeue-Bold-TRIAL.otf') format("opentype");
+}
+
+@font-face {
+	font-family: maisonMono;
+	src: url('../fonts/MaisonMono-Light-TRIAL.otf') format("opentype");
+}
+
+@font-face {
+	font-family: maisonLight;
+	src: url('../fonts/MaisonNeue-Light-TRIAL.otf') format("opentype");
+}
+
+@font-face {
+	font-family: maisonRegular;
+	src: url('../fonts/MaisonNeue-Book-TRIAL.otf') format("opentype");
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'maisonLight', helvetica, arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+	
+	transition: background-color .5s ease-out;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #0fc;
+	
+	transition: color .3s ease-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'maisonLight', helvetica, arial, sans-serif;
+	padding-left: 0;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-family: 'maisonBold';
+}
+
+.container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.row {
+	max-width: 1070px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	/*background-color: rgba(255,255,255,.85);*/
+	z-index: 10;
+	padding-top: .5em;
+	padding-bottom: .5em;
+ 
+ 	transition: padding .3s ease-out, margin .1s ease-out;
+}
+
+.navOpen {
+		margin-top: 3em;
+}
+
+.headerBig {
+	padding-bottom: 3em;
+}
+
+
+.line {
+	text-decoration: line-through;
+}
+
+.bold {
+	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-size: 1em;
+}
+
+
+.info {
+	font-family: 'maisonMono', helvetica, arial, monospace;
+	font-size: 1em;
+}
+
+.logo {
+	font-family:'maisonBold', helvetica, arial, sans-serif;
+	/*font-weight: bold;*/
+	font-size: 1.5em !important;
+	padding-left: 15px;
+	opacity: .95;
+}
+
+.headerBig .logo {
+	font-size: 3em !important;
+	line-height: .9;
+	padding-top: .5em;
+	
+	transition: padding-top .3s ease-out;
+}
+
+.headerBig .menuBtn {
+	margin-top: 2em;
+}
+
+
+/*========= menuBtn =======*/
+.menuBtn {
+	transition: all .3s ease-out;	
+}
+
+.menuBtn:hover > .menuBtnElement {
+	background-color: #0fc;
+}
+
+
+.menuBtnCloseIcon > #menuBtnElement1 {
+		-webkit-transform: translateY(.5em) rotate(45deg);
+		background-color: #0fc;
+}
+.menuBtnCloseIcon > #menuBtnElement2 {
+		opacity: 0;
+}
+.menuBtnCloseIcon > #menuBtnElement3 {
+		-webkit-transform:translateY(-.5em)rotate(-45deg);
+		background-color: #0fc;
+}
+
+.menuBtnElement {
+	width: 1.85em;
+	height: .25em;
+	background-color: #000;
+	margin-bottom: .25em;
+	-webkit-transform-origin: 50% 50%;
+	
+	transition: all .3s ease-out;
+}
+
+/*========= nav ==============*/
+
+nav {
+	background-color: #fff;
+	border-bottom: 1px solid #f0f0f0;
+	color: #000;
+	position: fixed;
+	z-index: 200;
+	overflow: hidden;
+	height: 3em;
+	line-height: 3em;
+	font-family: 'maisonLight', helvetica, arial, sans-serif;
+	text-transform: lowercase;
+	letter-spacing: .1em;
+	font-size: .8em;
+	
+	transition: height .3s ease-out, background-color .3s ease-out;
+}
+
+nav:hover {
+	background-color: #f0f0f0;
+}
+nav ul {
+		padding-left: 0px;	
+}
+
+nav li {
+	padding-left: 0px;
+	cursor: pointer;
+}
+
+.navClosed {
+	height: 0px !important;
+}
+
+
+/*========= topLink ==========*/
+
+.topLinkContainer {
+	position: fixed;
+	bottom: -3em;
+	z-index: 20;
+	
+	transition: all .7s ease-out;
+}
+
+.topLink {
+	text-decoration: none;
+	color: #000;
+	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.75em;
+}
+
+.topLinkOpen {
+	bottom: 0 !important;
+}
+
+.topLinkElementContainer {
+	width: 2em;
+	height: 1em;
+	float: left;
+	margin: .5em;
+}
+
+
+
+
+
+
+.categorie {
+	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-weight: bold;
+	float: left;
+}
+
+p {
+	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-size: 1em;
+}
+
+.intro {
+	margin-top: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.addressBar {
+	transition: all .7s ease-out;
+}
+
+.contact {
+	font-family: 'maisonLight';
+	font-size: .85em;
+}
+
+
+
+
+
+.scroller h1 {
+	font-size: 1.75em;
+}
+
+
+.logoSpan {
+	display: inline-block;
+	padding-bottom: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+.headerBig .logoSpan {
+	display: block !important; 	
+}
+
+
+.underline {
+	/*border-bottom: 0.1em solid;*/
+}
+
+
+.work {
+	margin-top: 50px;
+	min-height: 480px;
+}
+
+.workTitle {
+	font-family: 'maisonMono', helvetica, arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+	letter-spacing: 1px;
+	font-size: 1em !important;
+	line-height: .9;
+	display: inline-block;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: 20%;
+	z-index: 10;
+	position: relative;
+	top: 20em;
+	display: none;
+}
+
+
+/*//////// work /////////*/
+
+.projectTitle {
+	opacity: .65;
+	font-size: 8em;
+}
+
+.image {
+	overflow: hidden;
+}
+
+.image img {
+	max-width: 100%;
+}
+
+.half {
+	height: 500px;
+}
+
+
+/*//////// CV ////////////*/
+.clients,
+.cv {
+	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-size: 1.25em;
+	line-height: 1.75;
+}
+
+.cvList {
+	margin-bottom: 1em;
+	display: block;
+}
+
+.cvList span {	
+	display: inline-block;
+	transition: background-color .3s ease-out;
+	
+}
+
+.cvList span:hover {background-color: #0fc;}
+
+.cvListEntry .date {
+	font-family: 'maisonLight', helvetica, arial, sans-serif;
+	font-size: .45em;
+	display: block;
+	margin-top: 3em;
+}
+
+.clients div {
+}
+
+.clientLogo {
+	height: 100px;
+
+	background-size: 70%;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+#logo01 {background-image: url(../img/logos/telefonica.svg);}
+#logo02 {background-image: url(../img/logos/daimler.svg);}
+#logo03 {background-image: url(../img/logos/sto.svg);}
+#logo04 {background-image: url(../img/logos/telefonica.svg);}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 21em) {
+	.headerBig .logo {
+		font-size: 6em !important;
+		line-height: .9;
+		padding-top: .5em;
+	}
+	
+	.intro {
+		margin-top: 300px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	
+	.headerBig {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+	.cvList span {
+		display: inline;
+	}
+	
+	.cvListEntry .date {
+		font-family: 'maisonLight', helvetica, arial, sans-serif;
+		font-size: .45em;
+		display: inline-block;
+		margin-top: 0;
+	}
+	
+}
+
+
+

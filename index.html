@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Heyfive.me</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+    </head>
+    <body>
+    <!--///////////////////////////////////// nav //////////////////////////////////-->
+	<nav class="container navClosed">
+	       <ul class="row">
+		       <li class="col-xs-4" onclick="scrollToElement('#introContainer')">intro</li>
+		       <li class="col-xs-4" onclick="scrollToElement('#five')">Work</li>
+		       <li class="col-xs-4" onclick="scrollToElement('#me')">me</li>
+	       </ul>
+       </nav>
+    <div class="container">
+    <!--///////////////////////////////////// sheader //////////////////////////////////-->
+       
+       <header class="headerBig">
+	       
+	       <div class="row">
+	       		<div class="logo col-xs-9">
+	       			<span class="logoSpan"><span class="underline" id="logo1">Heyfive.</span></span><span class="logoSpan"><span class="underline" id="logo2">me</span></span>
+	      		</div>
+	      			<div class="col-xs-3 menuBtn" onclick="menuToggle()">
+		      			<div class="menuBtnElement" id="menuBtnElement1"></div>
+		      			<div class="menuBtnElement" id="menuBtnElement2"></div>
+		      			<div class="menuBtnElement" id="menuBtnElement3"></div>
+	      			</div>
+	      	</div>
+       </header>
+    </div><!--container-->
+    <div class="container topLinkContainer">
+    	<div class="row">
+    		<a class="topLink col-xs-2" onclick="scrollToElement('#introContainer')">Top</a>
+    	</div>
+    </div>
+    <!--///////////////////////////////////// intro 0 45 127 //////////////////////////////////-->
+	<div class="container fadeIn" id="introContainer">
+		<section class="intro row" id="intro" data-color="rgb(0, 0, 0)" data-bgcolor="#fff" data-text1="Heyfive." data-text2="me" >
+	       		<h1 class="col-md-6">Hey, nice to meet you. My name is Martin. You can see some of my work here or read more about me there.</h1>
+	       </section>
+		<section class="row addressBar">
+	       		<span class="col-xs-4 contact" id="contact1">
+	       			<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>mail@heyfive.me
+	       		</span>
+	       		<span class="col-xs-4 contact" id="contact2">
+	       			<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>+49 (0)173.82 05 140
+	       		</span>
+	       		<span class="col-xs-4 contact" id="contact3">
+	       			<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>heyfive_me
+	       		</span>
+	       </section><!-- /intro-->
+	</div><!--container-->
+	  
+	   
+	<!--///////////////////////////////////// five //////////////////////////////////-->
+	   <section class="container fadeIn" id="five" data-color="#000" data-bgcolor="#f0f0f0" data-text1="Etapes&nbsp;" data-text2="App" > 
+	   		<span class="workTitle">
+		       		<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;01.Etapes App
+	       		</span>  
+	       <div class="work row section">
+	       			<img class="col-xs-12 col-sm-9 image" src="img/etapes3D.png" alt="Etapes App Screens" />
+	       </div><!--row-->
+	       <div class="work row section">
+	       			<img class="col-xs-4 col-sm-3 image" src="img/etapesTitle1.png" alt="Etapes App Screens" />
+	       			<img class="col-xs-4 col-sm-3 image" src="img/etapesTitle2.png" alt="Etapes App Screens" />
+	       			<img class="col-xs-4 col-sm-3 image" src="img/etapesTitle3.png" alt="Etapes App Screens" />
+	       </div><!--row-->	
+	       <div class="work row section">
+	       			<img class="col-xs-4 col-sm-6 col-md-offset-3 image" src="img/janick_hand.png" alt="Etapes App Screens" />
+	       			<img class="col-xs-4 col-sm-3 image" src="img/etapesTitle2.png" alt="Etapes App Screens" />
+	       			<img class="col-xs-4 col-sm-3 image" src="img/etapesTitle3.png" alt="Etapes App Screens" />
+	       </div><!--row-->	
+	    </section><!-- /container-->
+	       
+	       <section class="work row section" id="four" data-color="#fff" data-bgcolor="#000" data-text1="Punze&nbsp;" data-text2="App">
+	       		<span class="workTitle col-md-2">02</span>
+	       </section><!-- /work-->
+	       
+	       <section class="work row section" id="three" data-color="#fff" data-bgcolor="#0fc" data-text1="Arachno-" data-text2="Box">
+	       		<span class="workTitle col-md-2">03</span>
+	       </section><!-- /work-->
+	       
+	       <section class="work row section" id="two" data-color="#000" data-bgcolor="##898989" data-text1="Pencil&nbsp;" data-text2="Project">
+	       		<span class="workTitle col-md-2">04</span>
+	       </section><!-- /work-->
+	       
+	       <section class="work row section" id="one" data-color="#f0f" data-bgcolor="#fff" data-text1="Me, my self&nbsp;" data-text2="& I">
+	       		<span class="workTitle col-md-2">05</span>
+	       </section><!-- /work-->
+	    
+	   <!--///////////////////////////////////// me //////////////////////////////////-->
+	   <section class="container fadeIn" id="me" data-color="rgb(255, 255, 255)" data-bgcolor="#898989" data-text1="About&nbsp;" data-text2="me" > 
+	   		<span class="workTitle">
+		       		<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;me
+	       		</span> 
+	       		 
+	       <div class="work row section cv">
+	       		<span class="col-xs-12 contact" id="contact1">
+	       			<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>
+	       		</span>
+	       		<span class="cvList col-sm-9">	
+					<span class="cvListEntry">
+						<span class="date">1980</span> 
+						<span class="text">Geboren in Nürtingen.</span>
+					</span>
+					<span class="cvListEntry">
+						<span class="date">1998</span>
+						<span class="text">Ausbildung zum technischen Zeichner, anschließend Zivildienst.</span>
+					</span>
+						<span class="cvListEntry"><span class="date">2002</span> Festanstellung als technischer Zeichner</span>
+						<span class="cvListEntry"><span class="date">2003</span> 3-jähriges Berufskolleg für Grafikdesign in Stuttgart</span>
+						<span class="cvListEntry"><span class="date">2006</span> Designer beim i_d buero in Stuttgart</span>
+						<span class="cvListEntry"><span class="date">2009</span> Stipendium Begabtenförderung des Bundesministeriums für Bildung & Forschung</span>
+						<span class="cvListEntry"><span class="date">2009</span> Studium visuelle Kommunikation in Pforzheim mit dem Schwerpunkt Multimedia</span>
+						<span class="cvListEntry"><span class="date">2013</span> Bachelor of Arts im Studiengang visuelle Kommunikation. Abschluss mit Auszeichnung</span>
+						<span class="cvListEntry"><span class="date">Aktuell</span> Interface Designer bei Strichpunkt in Stuttgart</span>
+				</span>
+	       </div><!--row-->
+	       
+	       <div class="work row section clients">
+	       		<span class="col-xs-12 contact" id="contact1">
+	       			<span class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>
+	       		</span>
+	       		<div class="col-md-9">
+	       			<div class="clientLogo col-xs-6 col-sm-3" id="logo01"></div>
+	       			<div class="clientLogo col-xs-6 col-sm-3" id="logo02"></div>
+	       			<div class="clientLogo col-xs-6 col-sm-3" id="logo03"></div>
+	       			<div class="clientLogo col-xs-6 col-sm-3" id="logo04"></div>
+	       		</div>
+	       		
+	       </div><!--row-->
+	    </section><!-- /container-->
+        
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+       <!-- <script src="js/jquery.stickyscroll.js"></script>-->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
