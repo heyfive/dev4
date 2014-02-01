@@ -295,7 +295,6 @@ p {
 
 .work {
 	margin-top: 50px;
-	min-height: 480px;
 }
 
 .workTitle {
@@ -312,6 +311,13 @@ p {
 	position: relative;
 	top: 20em;
 	display: none;
+}
+
+/*//////// content /////////*/
+
+.content {
+	border: 1px solid red;
+	height: 100vh;
 }
 
 
