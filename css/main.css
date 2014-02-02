@@ -387,7 +387,43 @@ p {
 #logo04 {background-image: url(../img/logos/telefonica.svg);}
 
 
+/*//////// Cases ////////////*/
+#etapes {
+	background-color: #000;
+	color: #fff;
+}
 
+#etapes .menuBtnElement {
+	background-color: #fff;
+}
+
+.caseTitle {
+	font-size: 3em !important;
+	line-height: 1.15;
+	padding-top: .5em;
+	position: relative;
+	z-index: 10;
+}
+
+.caseIntro {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.caseIntroHg {
+	border: 1px solid red;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: .5;
+	
+	background-image: url(../img/foto2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
 
 /* ==========================================================================
@@ -397,7 +433,7 @@ p {
 @media only screen and (min-width: 21em) {
 	.headerBig .logo {
 		font-size: 6em !important;
-		line-height: .9;
+		line-height: 1.15;
 		padding-top: .5em;
 	}
 	
@@ -429,6 +465,25 @@ p {
 	.cv {
 		font-size: 1.25em;
 	}
+	
+	/*//////// Cases ////////////*/
+
+	#etapes {
+		background-color: #000;
+		color: #fff;
+	}
+	
+	.caseTitle {
+		font-size: 6em !important;
+		line-height: 1.15;
+		padding-top: .5em;
+	}
+	
+	.CaseIntro {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
 	
 }
 
