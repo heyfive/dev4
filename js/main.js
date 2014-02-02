@@ -24,7 +24,7 @@ function scrollToElement(id){
 /// Height Viewportsize ///////// 
 function sizeContent() {
 	viewportHeight = $(window).height();
-	$("#introContainer, #me, #caseIntroContainer").css("min-height", viewportHeight); 
+	$("#me, #caseIntroContainer").css("min-height", viewportHeight); 
 }
 
 
@@ -43,12 +43,12 @@ function headerchange() {
     var value = $(this).scrollTop();
     if ( value > 120 )
         $(".introHeader").removeClass('headerBig'),
-        $(".addressBar").css("opacity","0"),
+        //$(".addressBar").css("opacity","0"),
         $(".topLinkContainer").addClass('topLinkOpen'),
         $(".caseIntroHg").fadeOut( "slow" );
     else
         $(".introHeader").addClass('headerBig'),
-        $(".addressBar").css("opacity","1"),
+        //$(".addressBar").css("opacity","1"),
         $(".topLinkContainer").removeClass('topLinkOpen'),
         $(".caseIntroHg").fadeIn( "slow" );
 }
