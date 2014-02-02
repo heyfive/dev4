@@ -16,7 +16,7 @@ $(window).resize(function(){
 /// scroll to Element Navi /////////
 function scrollToElement(id){
 	$('html, body').animate({
-		scrollTop: $(id).offset().top -80
+		scrollTop: $(id).offset().top
 	}, 600);
 }
 
@@ -64,8 +64,12 @@ $('.content').bind('inview', function(event, visible) {
 		text1 	= $(this).data('text1');
 		text2 	= $(this).data('text2');
       
+        $('body, a').css({"color":color});
+		$('.menuBtnElement').css({"background-color":color});
+		$("body").css("background-color",bgColor);
         $('#logo1').text(text1);
 		$('#logo2').text(text2);
+		
       }
 });
 
