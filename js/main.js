@@ -24,7 +24,7 @@ function scrollToElement(id){
 /// Height Viewportsize ///////// 
 function sizeContent() {
 	viewportHeight = $(window).height();
-	$("#introContainer, #me").css("min-height", viewportHeight); 
+	$("#introContainer, #me, #caseIntroContainer").css("min-height", viewportHeight); 
 }
 
 
@@ -42,13 +42,15 @@ $(window).scroll(function(){
 function headerchange() {
     var value = $(this).scrollTop();
     if ( value > 120 )
-        $("header").removeClass('headerBig'),
+        $(".introHeader").removeClass('headerBig'),
         $(".addressBar").css("opacity","0"),
-        $(".topLinkContainer").addClass('topLinkOpen');
+        $(".topLinkContainer").addClass('topLinkOpen'),
+        $(".caseIntroHg").fadeOut( "slow" );
     else
-        $("header").addClass('headerBig'),
+        $(".introHeader").addClass('headerBig'),
         $(".addressBar").css("opacity","1"),
-        $(".topLinkContainer").removeClass('topLinkOpen');
+        $(".topLinkContainer").removeClass('topLinkOpen'),
+        $(".caseIntroHg").fadeIn( "slow" );
 }
 
 
