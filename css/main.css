@@ -238,11 +238,6 @@ nav li {
 	margin: .5em;
 }
 
-
-
-
-
-
 .categorie {
 	font-family: 'maisonBold', helvetica, arial, sans-serif;
 	font-weight: bold;
@@ -262,19 +257,20 @@ p {
 
 .addressBar {
 	transition: all .7s ease-out;
+	margin-bottom: 5em;
 }
 
+.info,
 .contact {
 	font-family: 'maisonLight';
 	font-size: .75em;
 	display: block;
 }
 
+
 .contactText {
 	display: none;
 }
-
-
 
 .scroller h1 {
 	font-size: 1.75em;
@@ -317,8 +313,26 @@ p {
 	display: none;
 }
 
-/*//////// content /////////*/
+/*//////// caseLink /////////*/
 
+.caseLink {
+	height: 400px;
+	
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#etapesLink {
+	background-image: url(../img/foto2.jpg);
+}
+#ropeLink {
+	background-image: url(../img/oben.jpg);
+}
+
+#punzeLink {
+	background-image: url(../img/punze.png);
+}
 
 
 
@@ -410,6 +424,13 @@ p {
 	padding-bottom: 50px;
 }
 
+
+.infoText, 
+.infoBar {
+	position: relative;
+	z-index: 10;
+}
+
 .caseIntroHg {
 	border: 1px solid red;
 	width: 100%;
@@ -424,6 +445,8 @@ p {
 	background-size: cover;
 	background-position: center;
 }
+
+
 
 
 /* ==========================================================================
