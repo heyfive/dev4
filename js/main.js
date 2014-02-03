@@ -41,7 +41,7 @@ $(window).scroll(function(){
 
 function headerchange() {
     var value = $(this).scrollTop();
-    if ( value > 120 )
+    if ( value > 50 )
         $(".introHeader").removeClass('headerBig'),
         //$(".addressBar").css("opacity","0"),
         $(".topLinkContainer").addClass('topLinkOpen'),
