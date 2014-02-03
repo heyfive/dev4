@@ -316,16 +316,46 @@ p {
 /*//////// caseLink /////////*/
 
 .caseLink {
-	height: 400px;
-	
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	height: 320px;
+	padding: 0;
+	background-color: #0fc;
+	overflow: hidden;
 }
 
-#etapesLink {
+.caseLinkImg {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding: 2em;
+	
 	background-image: url(../img/foto2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+	transition: opacity .3s ease-out;
 }
+
+.caseLinkImg:hover {
+	opacity: .5;
+}
+
+.caseImgLinkText {
+	position: absolute;
+	bottom: -3em;
+	color: #fff;
+	font-family: 'maisonBold';
+	font-size: 3em;
+	line-height: 1.15;
+	margin-left: 15px;
+	opacity: 0;
+	
+	transition: all .3s ease-out;
+}
+
+
 #ropeLink {
 	background-image: url(../img/oben.jpg);
 }
@@ -334,6 +364,52 @@ p {
 	background-image: url(../img/punze.png);
 }
 
+.caseBtnElementWrapper {
+	width: 1.85em;
+	height: 1.85em;
+	
+	transition-delay: 1s;
+	transition: all .3s ease;
+}
+
+.caseBtnElement {
+	position: relative;
+	background-color: #fff;
+	
+	transition: all .3s ease;
+}
+.caseBtnElementHorizontal {
+	width:  1.85em;
+	height: .25em;
+	top: .8em;
+	left: 0em;
+	margin-bottom: auto;
+}
+
+.caseBtnElementVertical {
+	height:  1.85em;
+	width: .25em;
+	left: .8em;
+	top: 0em;
+	margin-top: -.25em;
+	transform-origin: center;
+}
+
+/*//////// caseLink /////////*/
+
+
+.caseLink:hover > .caseImgLinkText {
+	bottom: 1em;
+	opacity: 1;
+}
+
+.caseLinkImg:hover > .caseBtnElementWrapper {
+	-webkit-transform: rotate(90deg);
+} 
+
+.caseLinkImg:hover > .caseBtnElementWrapper > .caseBtnElementHorizontal {
+	-webkit-transform: rotate(90deg);
+} 
 
 
 /*//////// work /////////*/
