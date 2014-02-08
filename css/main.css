@@ -5,8 +5,10 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
+/* * {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
+}*/
 
 
 /*///////////////////////*/
@@ -88,7 +90,7 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0px;
-	/*background-color: rgba(255,255,255,.85);*/
+	/*background-color: rgba(255,255,255,.65);*/
 	z-index: 10;
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -102,6 +104,7 @@ header {
 
 .headerBig {
 	padding-bottom: 3em;
+	background-color: transparent !important;
 }
 
 
@@ -143,7 +146,8 @@ header {
 
 /*========= menuBtn =======*/
 .menuBtn {
-	transition: all .3s ease-out;	
+	transition: all .3s ease-out;
+	margin-top: .5em;	
 }
 
 .menuBtn:hover > .menuBtnElement {
@@ -172,6 +176,7 @@ header {
 	
 	transition: all .3s ease-out;
 }
+
 
 /*========= nav ==============*/
 
@@ -330,17 +335,14 @@ p {
 	bottom: 0;
 	padding: 2em;
 	
-	background-image: url(../img/foto2.jpg);
+	background-image: url(../img/test.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:cover;
 	
-	transition: opacity .3s ease-out;
+	transition: all .3s ease-out;
 }
 
-.caseLinkImg:hover {
-	opacity: .5;
-}
 
 .caseImgLinkText {
 	position: absolute;
@@ -349,8 +351,12 @@ p {
 	font-family: 'maisonBold';
 	font-size: 3em;
 	line-height: 1.15;
-	margin-left: 15px;
+	margin-left: 0px;
 	opacity: 0;
+	width: 100%;
+	height: 100%;
+	padding: .5em;
+	
 	
 	transition: all .3s ease-out;
 }
@@ -367,7 +373,9 @@ p {
 .caseBtnElementWrapper {
 	width: 1.85em;
 	height: 1.85em;
-	
+	position: absolute;
+	right: 2em;
+	bottom: 2em;
 	transition-delay: 1s;
 	transition: all .3s ease;
 }
@@ -395,19 +403,27 @@ p {
 	transform-origin: center;
 }
 
-/*//////// caseLink /////////*/
+/*//////// hover styles /////////*/
 
+.caseImgLinkText:hover{
+	opacity: .5;
+	background-color: rgba(0,255,204,.5);
+}
+
+.caseLink:hover > .caseLinkImg {
+	opacity: .5;
+}
 
 .caseLink:hover > .caseImgLinkText {
-	bottom: 1em;
+	bottom: 0em;
 	opacity: 1;
 }
 
-.caseLinkImg:hover > .caseBtnElementWrapper {
+.caseLink:hover > .caseBtnElementWrapper {
 	-webkit-transform: rotate(90deg);
 } 
 
-.caseLinkImg:hover > .caseBtnElementWrapper > .caseBtnElementHorizontal {
+.caseLink:hover > .caseBtnElementWrapper > .caseBtnElementHorizontal {
 	-webkit-transform: rotate(90deg);
 } 
 
@@ -479,7 +495,7 @@ p {
 
 /*//////// Cases ////////////*/
 #etapes {
-	background-color: #000;
+	background-color: #bebebe;
 	color: #fff;
 }
 
