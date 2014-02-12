@@ -10,6 +10,9 @@
 -webkit-touch-callout: none;        
 }*/
 
+:-moz-selection { background: rgba(255, 245, 6, 0.85); }
+::selection { background:rgba(255, 245, 6, 0.85); }
+
 
 /*///////////////////////*/
 
@@ -33,6 +36,11 @@
 	src: url('../fonts/MaisonNeue-Book-TRIAL.otf') format("opentype");
 }
 
+@font-face {
+	font-family: tradeGothic;
+	src: url('../fonts/TradeGothicBold.ttf') format("truetype");
+}
+
 
 * {
 	box-sizing: border-box;
@@ -50,7 +58,7 @@ body {
 a,
 a:hover {
 	text-decoration: none;
-	color: #0fc;
+	color: rgba(255, 245, 6, 0.85);
 	
 	transition: color .3s ease-out;
 }
@@ -151,20 +159,20 @@ header {
 }
 
 .menuBtn:hover > .menuBtnElement {
-	background-color: #0fc;
+	background-color: rgba(255, 245, 6, 0.85);
 }
 
 
 .menuBtnCloseIcon > #menuBtnElement1 {
 		-webkit-transform: translateY(.5em) rotate(45deg);
-		background-color: #0fc;
+		background-color: rgba(255, 245, 6, 0.85);
 }
 .menuBtnCloseIcon > #menuBtnElement2 {
 		opacity: 0;
 }
 .menuBtnCloseIcon > #menuBtnElement3 {
 		-webkit-transform:translateY(-.5em)rotate(-45deg);
-		background-color: #0fc;
+		background-color: rgba(255, 245, 6, 0.85);
 }
 
 .menuBtnElement {
@@ -222,6 +230,10 @@ nav li {
 	z-index: 20;
 	
 	transition: all .7s ease-out;
+}
+
+.topLink:hover {
+	cursor: pointer;
 }
 
 .topLink {
@@ -294,7 +306,7 @@ p {
 
 
 .underline {
-	/*border-bottom: 0.1em solid;*/
+	border-bottom: 0.075em solid;
 }
 
 
@@ -320,10 +332,11 @@ p {
 
 /*//////// caseLink /////////*/
 
+
+
 .caseLink {
 	height: 320px;
 	padding: 0;
-	background-color: #0fc;
 	overflow: hidden;
 }
 
@@ -338,7 +351,7 @@ p {
 	background-image: url(../img/test.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size:cover;
+	background-size:contain;
 	
 	transition: all .3s ease-out;
 }
@@ -347,9 +360,10 @@ p {
 .caseImgLinkText {
 	position: absolute;
 	bottom: -3em;
-	color: #fff;
+	color: rgba(255, 245, 6, 0.85);
 	font-family: 'maisonBold';
-	font-size: 3em;
+	font-size: 5em;
+	font-weight: bolder;
 	line-height: 1.15;
 	margin-left: 0px;
 	opacity: 0;
@@ -374,7 +388,7 @@ p {
 	width: 1.85em;
 	height: 1.85em;
 	position: absolute;
-	right: 2em;
+	right: 50%;
 	bottom: 2em;
 	transition-delay: 1s;
 	transition: all .3s ease;
@@ -382,7 +396,7 @@ p {
 
 .caseBtnElement {
 	position: relative;
-	background-color: #fff;
+	background-color: rgba(255, 245, 6, 0.85);
 	
 	transition: all .3s ease;
 }
@@ -407,11 +421,10 @@ p {
 
 .caseImgLinkText:hover{
 	opacity: .5;
-	background-color: rgba(0,255,204,.5);
 }
 
 .caseLink:hover > .caseLinkImg {
-	opacity: .5;
+	opacity: 1;
 }
 
 .caseLink:hover > .caseImgLinkText {
@@ -467,7 +480,7 @@ p {
 	
 }
 
-.cvList span:hover {background-color: #0fc;}
+.cvList span:hover {background-color: rgba(255, 245, 6, 0.85);}
 
 .cvListEntry .date {
 	font-family: 'maisonLight', helvetica, arial, sans-serif;
@@ -582,6 +595,10 @@ p {
 	}
 	
 	/*//////// Cases ////////////*/
+	
+	.cases a:nth-child(odd) > .caseImgLinkText {
+		text-align: right;
+	}
 
 	#etapes {
 		background-color: #000;
