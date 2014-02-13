@@ -387,7 +387,7 @@ p {
 	height: 1.85em;
 	position: absolute;
 	right: 50%;
-	bottom: 2em;
+	bottom: 50%;
 	transition-delay: 1s;
 	transition: all .3s ease;
 }
@@ -416,23 +416,28 @@ p {
 }
 
 /*//////// hover styles /////////*/
-
+.caseImgLinkText:focus,
 .caseImgLinkText:hover{
 	opacity: .5;
 }
 
+.caseLink:focus > .caseLinkImg,
 .caseLink:hover > .caseLinkImg {
 	opacity: 1;
 }
 
+.caseLink:focus > .caseImgLinkText,
 .caseLink:hover > .caseImgLinkText {
 	opacity: 1;
 }
 
+.caseLink:focus > .caseBtnElementWrapper,
 .caseLink:hover > .caseBtnElementWrapper {
 	-webkit-transform: rotate(90deg);
+	opacity: 0;
 } 
 
+.caseLink:focus > .caseBtnElementWrapper > .caseBtnElementHorizontal,
 .caseLink:hover > .caseBtnElementWrapper > .caseBtnElementHorizontal {
 	-webkit-transform: rotate(90deg);
 } 
