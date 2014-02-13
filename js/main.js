@@ -1,5 +1,9 @@
-
-
+/// function Hover Effect /////////
+$(document).ready(function() {
+    $('.hover').bind('touchstart touchend', function(e) {
+        $(this).toggleClass('hover_effect');
+    });
+});
 
 /// Start functions on DocumentReady ///////// 
 $(document).ready(function() { 
