@@ -1,14 +1,15 @@
 /// function Hover Effect /////////
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('.hover').bind('touchstart touchend', function(e) {
         $(this).toggleClass('hover_effect');
     });
-});
+});*/
 
 /// Start functions on DocumentReady ///////// 
 $(document).ready(function() { 
  	 $('body').hide().fadeIn(500);
  	 sizeContent();
+ 	 colorControl();
 });
 
 
@@ -64,8 +65,8 @@ function headerchange() {
 $('.content').bind('inview', function(event, visible) {
       if (visible) {
       	console.log('visible');
-      	
-      	color 	= $(this).data('color');
+      
+	  	color 	= $(this).data('color');
 		bgColor	= $(this).data('bgcolor');
 		text1 	= $(this).data('text1');
 		text2 	= $(this).data('text2');
@@ -75,8 +76,7 @@ $('.content').bind('inview', function(event, visible) {
 		$("body").css("background-color",bgColor);
         $('#logo1').text(text1);
 		$('#logo2').text(text2);
-		
-      }
+      }	 	
 });
 
 function logoSetBack(){
@@ -88,9 +88,28 @@ function logoSetBack(){
 
 
 
-/*
+
 
 ////////////// colorchange ////////////////
+
+function colorControl() {
+
+		color 	= $(this).data('color');
+		bgColor	= $(this).data('bgcolor');
+		text1 	= $(this).data('text1');
+		text2 	= $(this).data('text2');
+      
+        $('body, a').css({"color":color});
+		$('.menuBtnElement').css({"background-color":color});
+		$("body").css("background-color",bgColor);
+        $('#logo1').text(text1);
+		$('#logo2').text(text2);
+		
+		console.log('colorcontrol');
+		
+}
+
+/*
 var title 		= null;
 var color 		= null;
 var trenner 	= null;
