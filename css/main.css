@@ -415,32 +415,26 @@ p {
 	transform-origin: center;
 }
 
-.hover {border: 1px solid red;}
 
 /*//////// hover styles /////////*/
 
-.caseImgLinkText:focus,
 .caseImgLinkText:hover{
 	opacity: .5;
 }
 
-.caseLink.hover_effect > .caseLinkImg,
 .caseLink:hover > .caseLinkImg {
 	opacity: 1;
 }
 
-.caseLink.hover_effect > .caseImgLinkText,
 .caseLink:hover > .caseImgLinkText {
 	opacity: 1;
 }
 
-.caseLink.hover_effect > .caseBtnElementWrapper,
 .caseLink:hover > .caseBtnElementWrapper {
 	-webkit-transform: rotate(90deg);
 	opacity: 0;
 } 
 
-.caseLink.hover_effect > .caseBtnElementWrapper > .caseBtnElementHorizontal,
 .caseLink:hover > .caseBtnElementWrapper > .caseBtnElementHorizontal {
 	-webkit-transform: rotate(90deg);
 } 
@@ -480,12 +474,12 @@ p {
 }
 
 .cvList span {	
-	display: inline-block;
+	display: block;
 	transition: background-color .3s ease-out;
 	
 }
 
-.cvList span:hover {background-color: rgba(255, 245, 6, 0.85);}
+.cvList span:hover {background-color: rgba(255, 255, 255, 1);}
 
 .cvListEntry .date {
 	font-family: 'maisonLight', helvetica, arial, sans-serif;
@@ -574,12 +568,6 @@ p {
 		margin-top: 300px;
 		padding-top: 50px;
 		padding-bottom: 50px;
-	}
-	
-	.intro:hover,
-	.intro:focus,
-	.intro:active {
-		color: red;
 	}
 	
 	.headerBig {
