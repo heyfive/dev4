@@ -415,29 +415,32 @@ p {
 	transform-origin: center;
 }
 
+.hover {border: 1px solid red;}
+
 /*//////// hover styles /////////*/
+
 .caseImgLinkText:focus,
 .caseImgLinkText:hover{
 	opacity: .5;
 }
 
-.caseLink:focus > .caseLinkImg,
+.caseLink.hover_effect > .caseLinkImg,
 .caseLink:hover > .caseLinkImg {
 	opacity: 1;
 }
 
-.caseLink:focus > .caseImgLinkText,
+.caseLink.hover_effect > .caseImgLinkText,
 .caseLink:hover > .caseImgLinkText {
 	opacity: 1;
 }
 
-.caseLink:focus > .caseBtnElementWrapper,
+.caseLink.hover_effect > .caseBtnElementWrapper,
 .caseLink:hover > .caseBtnElementWrapper {
 	-webkit-transform: rotate(90deg);
 	opacity: 0;
 } 
 
-.caseLink:focus > .caseBtnElementWrapper > .caseBtnElementHorizontal,
+.caseLink.hover_effect > .caseBtnElementWrapper > .caseBtnElementHorizontal,
 .caseLink:hover > .caseBtnElementWrapper > .caseBtnElementHorizontal {
 	-webkit-transform: rotate(90deg);
 } 
@@ -571,6 +574,12 @@ p {
 		margin-top: 300px;
 		padding-top: 50px;
 		padding-bottom: 50px;
+	}
+	
+	.intro:hover,
+	.intro:focus,
+	.intro:active {
+		color: red;
 	}
 	
 	.headerBig {
