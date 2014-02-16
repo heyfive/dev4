@@ -5,6 +5,53 @@
     });
 });*/
 
+/// EasyPie Charts /////////
+/*$(function() {
+		$('.chart').easyPieChart({
+			easing: 'easeOutQuint',
+			scaleColor: false,
+			trackColor: false,
+			barColor: 000,
+			lineWidth: 8,
+			size: 50,
+			onStep: function(from, to, percent) {
+				$(this.el).find('.percent').text(Math.round(percent));
+			}
+		});
+		var chart = window.chart = $('.chart').data('easyPieChart');
+			$('.js_update').on('click', function() {
+			chart.update(Math.random()*200-100);
+		});
+});*/
+
+$('.chartTrigger').mouseenter(function(){
+	chartValue = $(this).data('value');
+	chartTrigger(chartValue);
+});
+
+$('.chartTrigger').mouseleave(function(){
+	chartValue = 20;
+	chartTrigger(chartValue);
+});
+
+
+function chartTrigger(chartValue){
+	$('.chart').stop().animate({
+    	width: chartValue,
+		height:chartValue,
+		marginLeft: (chartValue/2)*-1,
+		marginTop: (chartValue/2)*-1
+	}, {
+    	duration: 500,
+    	specialEasing: {
+			height: "easeOutBack",
+			width: "easeOutBack",
+			marginLeft: "easeOutBack",
+			marginTop: "easeOutBack"
+		}	
+	});
+}
+
 /// Start functions on DocumentReady ///////// 
 $(document).ready(function() { 
  	 $('body').hide().fadeIn(500);
