@@ -21,8 +21,4 @@
     }
 }());
 
-// flexslider init
 
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
