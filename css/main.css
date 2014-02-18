@@ -10,8 +10,8 @@
 -webkit-touch-callout: none;        
 }*/
 
-:-moz-selection { background: rgba(255, 245, 6, 0.85); }
-::selection { background:rgba(255, 245, 6, 0.85); }
+:-moz-selection { background: rgba(0, 10, 255, 0.75); }
+::selection { background:rgba(0, 10, 255, 0.75); }
 
 
 /*///////////////////////*/
@@ -74,7 +74,7 @@ h6{
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 2em;
 	line-height: 1.25;
 	font-family: 'maisonBold';
 }
@@ -82,6 +82,10 @@ h1 {
 ul {
 	padding: 0;
 	list-style-type: none;
+}
+
+th {
+	vertical-align:text-top;
 }
 
 .container {
@@ -97,6 +101,7 @@ ul {
 	max-width: 1070px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 header {
@@ -160,7 +165,9 @@ header {
 /*========= menuBtn =======*/
 .menuBtn {
 	transition: all .3s ease-out;
-	margin-top: .5em;	
+	margin-top: .5em;
+	position: absolute;
+	right: 15px;	
 }
 
 .menuBtn:hover > .menuBtnElement {
@@ -186,6 +193,7 @@ header {
 	background-color: #000;
 	margin-bottom: .25em;
 	-webkit-transform-origin: 50% 50%;
+	position: relative;
 	
 	transition: all .3s ease-out;
 }
@@ -364,7 +372,7 @@ p {
 
 .caseImgLinkText {
 	position: absolute;
-	color: rgba(255, 245, 6, 0.85);
+	color: rgba(0, 10, 255, 0.85);
 	font-family: 'maisonBold';
 	font-size: 5em;
 	font-weight: bolder;
@@ -468,13 +476,30 @@ p {
 /*//////// me ////////////*/
 
 #me {
-	margin-top: 8em;
+	padding-top: 8em;
 }
-.about li,
-.about p {
+
+#me .contact {
+	color: rgba(0,10,255,1);
+}
+
+
+.aboutText p {
 	font-family: 'maisonBold', helvetica, arial, sans-serif;
-	font-size: 1.25em;
+	font-size: 1.75em;
 }
+
+.aboutCv table {
+	display: block;
+	font-size: .8em;
+}
+
+
+.firstTh {
+	padding-right: 20px;
+	font-family: 'maisonBold', helvetica, arial, sans-serif;
+}
+
 
 /* chart*/
 
@@ -529,50 +554,6 @@ p {
 	
 	
 }
-
-
-.clients,
-.cv {
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
-	font-size: 1em;
-	line-height: 1.75;
-}
-
-.cvList {
-	margin-bottom: 1em;
-	display: block;
-}
-
-.cvList span {	
-	display: block;
-	transition: background-color .3s ease-out;
-	
-}
-
-.cvList span:hover {background-color: rgba(255, 255, 255, 1);}
-
-.cvListEntry .date {
-	font-family: 'maisonLight', helvetica, arial, sans-serif;
-	font-size: .45em;
-	display: block;
-	margin-top: 3em;
-}
-
-.clients div {
-}
-
-.clientLogo {
-	height: 100px;
-
-	background-size: 70%;
-	background-position: left center;
-	background-repeat: no-repeat;
-}
-
-#logo01 {background-image: url(../img/logos/telefonica.svg);}
-#logo02 {background-image: url(../img/logos/daimler.svg);}
-#logo03 {background-image: url(../img/logos/sto.svg);}
-#logo04 {background-image: url(../img/logos/telefonica.svg);}
 
 
 /*//////// Cases ////////////*/
@@ -635,7 +616,7 @@ p {
 	}
 	
 	.intro {
-		margin-top: 300px;
+		margin-top: 350px;
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
