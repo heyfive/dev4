@@ -41,6 +41,16 @@
 	src: url('../fonts/TradeGothicBold.ttf') format("truetype");
 }
 
+/*@font-face {
+	font-family: maisonRegular;
+	src: url('../fonts/apercuLight.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: maisonBold;
+	src: url('../fonts/205-maaxblack-webfont.woff') format("truetype");
+}
+*/
 
 * {
 	box-sizing: border-box;
@@ -108,7 +118,7 @@ header {
 	width: 100%;
 	position: fixed;
 	top: 0px;
-	/*background-color: rgba(255,255,255,.65);*/
+	background-color: red;
 	z-index: 10;
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -167,7 +177,8 @@ header {
 	transition: all .3s ease-out;
 	margin-top: .5em;
 	position: absolute;
-	right: 15px;	
+	right: 45px;
+	cursor: pointer;
 }
 
 .menuBtn:hover > .menuBtnElement {
@@ -203,7 +214,6 @@ header {
 
 nav {
 	background-color: #fff;
-	border-bottom: 1px solid #f0f0f0;
 	color: #000;
 	position: fixed;
 	z-index: 200;
@@ -407,7 +417,7 @@ p {
 
 .caseBtnElement {
 	position: relative;
-	background-color: rgba(255, 245, 6, 0.85);
+	background-color: rgba(0, 0, 0, 0.85);;
 	
 	transition: all .3s ease;
 }
@@ -609,6 +619,11 @@ p {
    ========================================================================== */
 
 @media only screen and (min-width: 769px) {
+	
+	header {
+		background-color: transparent;
+	}
+	
 	.headerBig .logo {
 		font-size: 6em !important;
 		line-height: 1.15;
