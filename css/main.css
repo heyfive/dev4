@@ -356,6 +356,44 @@ p {
 /*//////// caseLink /////////*/
 
 
+#etapesLink {
+	background-color:#121d2e;
+}
+#etapesLink .caseLinkImg{
+	background-image: url(../img/test.png);
+}
+
+#punzeLink {
+	background-color: #e9e9e9;
+}
+
+#arachnoboxLink {
+	background-color: #0d0d0d;
+}
+
+#arachnoboxLink .caseLinkImg{
+	background-image: url(../img/arachnobox2.png);
+}
+
+#werkschauLink {
+	background-color: #f25a26;
+}
+
+#werkschauLink .caseLinkImg{
+	background-image: url(../img/werkschau4.png);
+	background-size:cover !important;
+}
+
+#pencilLink {
+	background-color: #a5c4d8;
+}
+
+#meLink {
+	background-color:#f0f0f0;
+	background-size:cover !important;
+}
+
+
 
 .caseLink {
 	height: 320px;
@@ -371,7 +409,6 @@ p {
 	bottom: 0;
 	padding: 2em;
 	
-	background-image: url(../img/test.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:contain;
@@ -382,7 +419,7 @@ p {
 
 .caseImgLinkText {
 	position: absolute;
-	color: rgba(0, 10, 255, 0.85);
+	color: rgba(255,255,255,.85)/*(0, 10, 255, 0.85)*/;
 	font-family: 'maisonBold';
 	font-size: 5em;
 	font-weight: bolder;
@@ -396,14 +433,6 @@ p {
 	transition: all .3s ease-out;
 }
 
-
-#ropeLink {
-	background-image: url(../img/oben.jpg);
-}
-
-#punzeLink {
-	background-image: url(../img/punze.png);
-}
 
 .caseBtnElementWrapper {
 	width: 1.85em;
@@ -681,7 +710,14 @@ p {
 		left: 0em;
 	}
 	
+	#etapesLink {
+	height: 640px;
+	}
+	#meLink {
+	height: 640px;
+	float: right;
 	
+	}
 
 
 	#etapes {
