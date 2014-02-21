@@ -129,12 +129,12 @@ $('.content').bind('inview', function(event, visible) {
 		$("body").css("background-color",bgColor);
         $('#logo1').text(text1);
 		$('#logo2').text(text2);
-		
+		/*
 		if ($(window).width() < 768) {
 	        $('header').css("background-color",bgColor);
         }else{
 	        $('header').css("background-color",'transparent');
-        }
+        }*/
       }	 	
 });
 
