@@ -15,9 +15,9 @@
 
 
 /*///////////////////////*/
-
+/*
 @font-face {
-	font-family: maisonBold;
+	font-family: Maison Neue Bold;
 	src: url('../fonts/MaisonNeue-Bold-TRIAL.otf') format("opentype");
 }
 
@@ -27,7 +27,7 @@
 }
 
 @font-face {
-	font-family: maisonLight;
+	font-family: Maison Neue Book;
 	src: url('../fonts/MaisonNeue-Light-TRIAL.otf') format("opentype");
 }
 
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-	font-family: maisonBold;
+	font-family: Maison Neue Bold;
 	src: url('../fonts/205-maaxblack-webfont.woff') format("truetype");
 }
 */
@@ -57,7 +57,7 @@
 }
 
 body {
-	font-family: 'maisonLight', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Book', helvetica, arial, sans-serif;
 	font-size: 16px;
 	color: #000;
 	background-color: #fff;
@@ -79,14 +79,14 @@ h3,
 h4,
 h5,
 h6{
-	font-family: 'maisonLight', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Book', helvetica, arial, sans-serif;
 	padding-left: 0;
 }
 
 h1 {
 	font-size: 2em;
 	line-height: 1.25;
-	font-family: 'maisonBold';
+	font-family: "Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif; font-weight:bold; font-style:normal;;
 }
 
 ul {
@@ -141,7 +141,7 @@ header {
 }
 
 .bold {
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-family: "Maison Neue Bold", Helvetica, Arial, Sans-Serif, sans-serif; font-weight:bold; font-style:normal;
 	font-size: 1em;
 }
 
@@ -152,7 +152,7 @@ header {
 }
 
 .logo {
-	font-family:'maisonBold', helvetica, arial, sans-serif;
+	font-family:'Maison Neue Bold', helvetica, arial, sans-serif;
 	/*font-weight: bold;*/
 	font-size: 1.5em !important;
 	padding-left: 15px;
@@ -220,7 +220,7 @@ nav {
 	overflow: hidden;
 	height: 3em;
 	line-height: 3em;
-	font-family: 'maisonLight', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Book', helvetica, arial, sans-serif;
 	text-transform: lowercase;
 	letter-spacing: .1em;
 	font-size: .8em;
@@ -262,7 +262,7 @@ nav li {
 .topLink {
 	text-decoration: none;
 	color: #000;
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Bold', helvetica, arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.75em;
 }
@@ -279,13 +279,13 @@ nav li {
 }
 
 .categorie {
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Bold', helvetica, arial, sans-serif;
 	font-weight: bold;
 	float: left;
 }
 
 p {
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Bold', helvetica, arial, sans-serif;
 	font-size: 1em;
 }
 
@@ -302,7 +302,7 @@ p {
 
 .info,
 .contact {
-	font-family: 'maisonLight';
+	font-family: 'Maison Neue Book';
 	font-size: .75em;
 	display: block;
 }
@@ -420,15 +420,15 @@ p {
 .caseImgLinkText {
 	position: absolute;
 	color: rgba(255,255,255,.85)/*(0, 10, 255, 0.85)*/;
-	font-family: 'maisonBold';
+	font-family: 'Maison Neue Bold';
 	font-size: 5em;
 	font-weight: bolder;
 	line-height: 1.15;
 	margin-left: 0px;
 	opacity: 0;
 	width: 100%;
-	height: 100%;
 	padding: .5em;
+	text-align: center;
 	
 	transition: all .3s ease-out;
 }
@@ -524,7 +524,7 @@ p {
 
 
 .aboutText p {
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Bold', helvetica, arial, sans-serif;
 	font-size: 1.75em;
 }
 
@@ -536,7 +536,7 @@ p {
 
 .firstTh {
 	padding-right: 20px;
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Bold', helvetica, arial, sans-serif;
 }
 
 
@@ -589,7 +589,7 @@ p {
 	float: left;
 	padding: 3px;
 	width: 50%;
-	font-family: 'maisonBold', helvetica, arial, sans-serif;
+	font-family: 'Maison Neue Bold', helvetica, arial, sans-serif;
 	
 	
 }
@@ -674,7 +674,7 @@ p {
 	}
 	
 	.cvListEntry .date {
-		font-family: 'maisonLight', helvetica, arial, sans-serif;
+		font-family: 'Maison Neue Book', helvetica, arial, sans-serif;
 		font-size: .45em;
 		display: inline-block;
 		margin-top: 0;
@@ -689,34 +689,27 @@ p {
 	}
 	
 	/*//////// Cases ////////////*/
+	.caseLink {
+		height: 480px;
+	}
+	
 	
 	.cases .caseLink:nth-child(odd) > .caseImgLinkText {
-		text-align: right;
-		right: -3em;
+		bottom: -3em;
 	}
 	
 	.cases .caseLink:nth-child(even) > .caseImgLinkText {
-		text-align: left;
-		left: -3em;
+		top: -3em;
 	}
 	
 	/*hover styles */
 	
 	.cases .caseLink:nth-child(odd):hover > .caseImgLinkText {
-		right: 0em;
+		bottom: 0em;
 	}
 	
 	.cases .caseLink:nth-child(even):hover > .caseImgLinkText {
-		left: 0em;
-	}
-	
-	#etapesLink {
-	height: 640px;
-	}
-	#meLink {
-	height: 640px;
-	float: right;
-	
+		top: 0em;	
 	}
 
 
